@@ -15,6 +15,7 @@
 		B6C5A9EB208A5E7300581986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9EA208A5E7300581986 /* main.m */; };
 		B6C5A9F5208A5E7300581986 /* ios_objc_fmdbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9F4208A5E7300581986 /* ios_objc_fmdbTests.m */; };
 		B6C5AA00208A5E7300581986 /* ios_objc_fmdbUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9FF208A5E7300581986 /* ios_objc_fmdbUITests.m */; };
+		B6C5AA0F208A605700581986 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C5AA0E208A605700581986 /* FMDB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B6C5AA10208A605C00581986 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B6C5A9D8208A5E7200581986 /* ios-objc-fmdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-objc-fmdb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5A9DB208A5E7200581986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		B6C5A9FB208A5E7300581986 /* ios-objc-fmdbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-objc-fmdbUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5A9FF208A5E7300581986 /* ios_objc_fmdbUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_fmdbUITests.m; sourceTree = "<group>"; };
 		B6C5AA01208A5E7300581986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6C5AA0E208A605700581986 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = Carthage/Build/iOS/FMDB.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C5AA0F208A605700581986 /* FMDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 				B6C5A9F3208A5E7300581986 /* ios-objc-fmdbTests */,
 				B6C5A9FE208A5E7300581986 /* ios-objc-fmdbUITests */,
 				B6C5A9D9208A5E7200581986 /* Products */,
+				B6C5AA0D208A605600581986 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +148,14 @@
 			path = "ios-objc-fmdbUITests";
 			sourceTree = "<group>";
 		};
+		B6C5AA0D208A605600581986 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5AA0E208A605700581986 /* FMDB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +166,8 @@
 				B6C5A9D4208A5E7200581986 /* Sources */,
 				B6C5A9D5208A5E7200581986 /* Frameworks */,
 				B6C5A9D6208A5E7200581986 /* Resources */,
+				B6C5AA10208A605C00581986 /* CopyFiles */,
+				B6C5AA11208A607600581986 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -256,6 +282,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6C5AA11208A607600581986 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FMDB.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6C5A9D4208A5E7200581986 /* Sources */ = {
@@ -435,6 +479,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ios-objc-fmdb/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +500,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ios-objc-fmdb/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
