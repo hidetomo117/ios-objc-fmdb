@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B67A0828208CBA9E0010DAD5 /* NSObject+NullToNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B67A0827208CBA9E0010DAD5 /* NSObject+NullToNil.m */; };
+		B67A082B208CEAD00010DAD5 /* DateFormatterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B67A082A208CEAD00010DAD5 /* DateFormatterHelper.m */; };
 		B6C5A9DD208A5E7200581986 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9DC208A5E7200581986 /* AppDelegate.m */; };
 		B6C5A9E0208A5E7200581986 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9DF208A5E7200581986 /* ViewController.m */; };
 		B6C5A9E3208A5E7200581986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C5A9E1208A5E7200581986 /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 		B6C5A9F5208A5E7300581986 /* ios_objc_fmdbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9F4208A5E7300581986 /* ios_objc_fmdbTests.m */; };
 		B6C5AA00208A5E7300581986 /* ios_objc_fmdbUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5A9FF208A5E7300581986 /* ios_objc_fmdbUITests.m */; };
 		B6C5AA0F208A605700581986 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C5AA0E208A605700581986 /* FMDB.framework */; };
+		B6C5AA1B208C8B8400581986 /* Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5AA1A208C8B8400581986 /* Paths.m */; };
+		B6C5AA1F208C9E8C00581986 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5AA1E208C9E8C00581986 /* User.m */; };
+		B6C5AA21208CA91000581986 /* SQLiteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5AA20208CA91000581986 /* SQLiteDAO.m */; };
+		B6C5AA24208CA97400581986 /* UserDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C5AA23208CA97400581986 /* UserDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B67A0826208CBA9E0010DAD5 /* NSObject+NullToNil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+NullToNil.h"; sourceTree = "<group>"; };
+		B67A0827208CBA9E0010DAD5 /* NSObject+NullToNil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NullToNil.m"; sourceTree = "<group>"; };
+		B67A0829208CEAD00010DAD5 /* DateFormatterHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateFormatterHelper.h; sourceTree = "<group>"; };
+		B67A082A208CEAD00010DAD5 /* DateFormatterHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateFormatterHelper.m; sourceTree = "<group>"; };
 		B6C5A9D8208A5E7200581986 /* ios-objc-fmdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-objc-fmdb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C5A9DB208A5E7200581986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6C5A9DC208A5E7200581986 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +75,14 @@
 		B6C5A9FF208A5E7300581986 /* ios_objc_fmdbUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_fmdbUITests.m; sourceTree = "<group>"; };
 		B6C5AA01208A5E7300581986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6C5AA0E208A605700581986 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = Carthage/Build/iOS/FMDB.framework; sourceTree = "<group>"; };
+		B6C5AA15208C7F3700581986 /* SQLiteDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLiteDAO.h; sourceTree = "<group>"; };
+		B6C5AA19208C8B8400581986 /* Paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
+		B6C5AA1A208C8B8400581986 /* Paths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paths.m; sourceTree = "<group>"; };
+		B6C5AA1D208C9E8C00581986 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B6C5AA1E208C9E8C00581986 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B6C5AA20208CA91000581986 /* SQLiteDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDAO.m; sourceTree = "<group>"; };
+		B6C5AA22208CA97400581986 /* UserDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDAO.h; sourceTree = "<group>"; };
+		B6C5AA23208CA97400581986 /* UserDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B67A0824208CBA750010DAD5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B67A0825208CBA7E0010DAD5 /* Foundation */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B67A0825208CBA7E0010DAD5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B67A0826208CBA9E0010DAD5 /* NSObject+NullToNil.h */,
+				B67A0827208CBA9E0010DAD5 /* NSObject+NullToNil.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		B6C5A9CF208A5E7100581986 = {
 			isa = PBXGroup;
 			children = (
@@ -117,15 +152,11 @@
 		B6C5A9DA208A5E7200581986 /* ios-objc-fmdb */ = {
 			isa = PBXGroup;
 			children = (
-				B6C5A9DB208A5E7200581986 /* AppDelegate.h */,
-				B6C5A9DC208A5E7200581986 /* AppDelegate.m */,
-				B6C5A9DE208A5E7200581986 /* ViewController.h */,
-				B6C5A9DF208A5E7200581986 /* ViewController.m */,
-				B6C5A9E1208A5E7200581986 /* Main.storyboard */,
-				B6C5A9E4208A5E7300581986 /* Assets.xcassets */,
-				B6C5A9E6208A5E7300581986 /* LaunchScreen.storyboard */,
-				B6C5A9E9208A5E7300581986 /* Info.plist */,
-				B6C5A9EA208A5E7300581986 /* main.m */,
+				B67A0824208CBA750010DAD5 /* Categories */,
+				B6C5AA18208C7F3D00581986 /* Others */,
+				B6C5AA14208C7F2800581986 /* Helpers */,
+				B6C5AA13208C7F1C00581986 /* ViewControllers */,
+				B6C5AA12208C7F1500581986 /* Models */,
 			);
 			path = "ios-objc-fmdb";
 			sourceTree = "<group>";
@@ -154,6 +185,61 @@
 				B6C5AA0E208A605700581986 /* FMDB.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C5AA12208C7F1500581986 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5AA1C208C9E5600581986 /* SQLite */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6C5AA13208C7F1C00581986 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5A9DE208A5E7200581986 /* ViewController.h */,
+				B6C5A9DF208A5E7200581986 /* ViewController.m */,
+				B6C5A9E1208A5E7200581986 /* Main.storyboard */,
+				B6C5A9E6208A5E7300581986 /* LaunchScreen.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B6C5AA14208C7F2800581986 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5AA19208C8B8400581986 /* Paths.h */,
+				B6C5AA1A208C8B8400581986 /* Paths.m */,
+				B6C5AA15208C7F3700581986 /* SQLiteDAO.h */,
+				B6C5AA20208CA91000581986 /* SQLiteDAO.m */,
+				B67A0829208CEAD00010DAD5 /* DateFormatterHelper.h */,
+				B67A082A208CEAD00010DAD5 /* DateFormatterHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B6C5AA18208C7F3D00581986 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5A9DB208A5E7200581986 /* AppDelegate.h */,
+				B6C5A9DC208A5E7200581986 /* AppDelegate.m */,
+				B6C5A9E4208A5E7300581986 /* Assets.xcassets */,
+				B6C5A9E9208A5E7300581986 /* Info.plist */,
+				B6C5A9EA208A5E7300581986 /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B6C5AA1C208C9E5600581986 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				B6C5AA1D208C9E8C00581986 /* User.h */,
+				B6C5AA1E208C9E8C00581986 /* User.m */,
+				B6C5AA22208CA97400581986 /* UserDAO.h */,
+				B6C5AA23208CA97400581986 /* UserDAO.m */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +393,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6C5A9E0208A5E7200581986 /* ViewController.m in Sources */,
+				B6C5AA1F208C9E8C00581986 /* User.m in Sources */,
+				B6C5AA21208CA91000581986 /* SQLiteDAO.m in Sources */,
+				B67A0828208CBA9E0010DAD5 /* NSObject+NullToNil.m in Sources */,
+				B6C5AA24208CA97400581986 /* UserDAO.m in Sources */,
+				B6C5AA1B208C8B8400581986 /* Paths.m in Sources */,
 				B6C5A9EB208A5E7300581986 /* main.m in Sources */,
+				B67A082B208CEAD00010DAD5 /* DateFormatterHelper.m in Sources */,
 				B6C5A9DD208A5E7200581986 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +575,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "ios-objc-fmdb/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-objc-fmdb/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +597,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "ios-objc-fmdb/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-objc-fmdb/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
